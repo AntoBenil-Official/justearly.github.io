@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$EARLY — Not wrong, just early</title>
+  <meta name="description" content="$EARLY — You are not wrong, just Early. Early — where conviction meets reward." />
+  <meta property="og:title" content="$EARLY — Not wrong, just early" />
+  <meta property="og:description" content="Early — where conviction meets reward. Blink and you’ll miss it." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ee67a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --bg-2:#0d1320;
+      --fg:#e8f2ff;
+      --muted:#8aa3c2;
+      --accent:#0ee67a;
+      --accent-2:#24a6ff;
+      --card:#121826;
+      --ring: rgba(14,230,122,.3);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:radial-gradient(1200px 600px at 80% -10%,rgba(36,166,255,.25),transparent),radial-gradient(1000px 500px at -10% 20%,rgba(14,230,122,.18),transparent),var(--bg);color:var(--fg);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent-2);text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 24px var(--ring)}
+    .brand h1{font-size:20px;margin:0}
+    nav a{margin:0 10px;color:var(--fg);opacity:.85}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#2df0c5 60%);padding:12px 18px;border-radius:12px;color:#07140c;font-weight:800;box-shadow:0 6px 24px rgba(14,230,122,.35)}
+    .btn-outline{border:1px solid #2b3a55;padding:10px 16px;border-radius:10px;color:var(--fg)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:46px 0}
+    .hero h2{font-size:44px;line-height:1.05;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:10px 0 22px;font-size:18px}
+    .kpis{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+    .chip{background:rgba(255,255,255,.06);border:1px solid #273247;border-radius:12px;padding:10px 12px}
+    .card{background:var(--card);border:1px solid #1a2436;border-radius:16px;padding:18px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .section{padding:36px 0}
+    h3{margin:0 0 12px}
+    code.ca{user-select:all;display:block;background:#0e1420;border:1px dashed #33415e;padding:12px;border-radius:12px;font-size:13px;word-break:break-all}
+    ul{padding-left:16px;margin:10px 0}
+    .socials{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{border:1px solid #2b3a55;border-radius:999px;padding:10px 14px;display:flex;align-items:center;gap:8px}
+    iframe.chart{width:100%;height:540px;border:0;border-radius:14px}
+    footer{opacity:.7;padding:28px 0;border-top:1px solid #1a2436;margin-top:28px}
+    .art{border-radius:16px;overflow:hidden;border:1px solid #1a2436;background:#0e1420}
+    .art img{width:100%;display:block}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- replace with your preferred logo -->
+        <img src="art1.jpg" alt="$EARLY wizard" />
+        <h1>$EARLY</h1>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#token">Token</a>
+        <a href="#chart">Chart</a>
+        <a href="#socials">Socials</a>
+        <a class="btn" href="#buy">Buy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>You are not wrong, just <span style="color:var(--accent)">$EARLY</span>.</h2>
+        <p>Early — where conviction meets reward. Blink and you’ll miss it. Not wrong, just winning sooner. For those who don’t wait for permission, because the future doesn’t wait.</p>
+        <div class="kpis">
+          <a class="btn" id="buy" href="https://dexscreener.com/solana/4vRWBu7wmnNSeVuqUQyv3ptUj9cY84ZXCb6LqHRWbQMW" target="_blank" rel="noopener">Trade on DEX</a>
+          <a class="btn-outline" href="https://x.com/justearly_cto" target="_blank" rel="noopener">Follow on X</a>
+          <a class="btn-outline" href="https://t.me/JustEarlyCTO" target="_blank" rel="noopener">Join Telegram</a>
+        </div>
+        <div class="kpis">
+          <div class="chip">Chain: Solana</div>
+          <div class="chip">Ticker: $EARLY</div>
+          <div class="chip">CTO Meme Wizard</div>
+        </div>
+      </div>
+      <div class="art card">
+        <!-- hero artwork; replace with the attached images -->
+        <img src="art2.jpg" alt="Not wrong, just early art" />
+      </div>
+    </section>
+
+    <section id="about" class="section grid-2">
+      <div class="card">
+        <h3>About $EARLY</h3>
+        <p>$EARLY is a community‑driven Solana meme coin celebrating conviction, speed, and the magic of being early.</p>
+        <ul>
+          <li>Mission: prove that timing + community can turn ideas into culture.</li>
+          <li>Vibe: “not wrong, just early.”</li>
+          <li>Utility: memes, raids, contests, and builder bounties.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Contract Address</h3>
+        <code class="ca">7ukFzJA7V6f28YieCjXcEXqiK8tAfbyXyvK6b36pump</code>
+        <p>Verify the CA on-chain and via DEX tools before trading.</p>
+      </div>
+    </section>
+
+    <section id="token" class="section grid-2">
+      <div class="card">
+        <h3>Tokenomics</h3>
+        <ul>
+          <li>Total supply: 999,829,845 $EARLY</li>
+          <li>Taxes: 0/0 (meme‑friendly)</li>
+          <li>Liquidity: community‑driven</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>How to Buy</h3>
+        <ul>
+          <li>Fund a Solana wallet (Phantom, Solflare) with SOL.</li>
+          <li>Open the DEX link, import $EARLY, confirm CA.</li>
+          <li>Swap SOL → $EARLY and join the community.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="chart" class="section">
+      <h3>Live Chart</h3>
+      <div class="card">
+        <!-- Dexscreener embed -->
+        <iframe class="chart" src="https://dexscreener.com/solana/4vRWBu7wmnNSeVuqUQyv3ptUj9cY84ZXCb6LqHRWbQMW?embed=1&theme=dark"></iframe>
+      </div>
+    </section>
+
+    <section id="socials" class="section grid-2">
+      <div class="card">
+        <h3>Socials</h3>
+        <div class="socials">
+          <a class="pill" href="https://t.me/JustEarlyCTO" target="_blank" rel="noopener">Telegram</a>
+          <a class="pill" href="https://x.com/justearly_cto" target="_blank" rel="noopener">X (Twitter)</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Statements</h3>
+        <p>This site is for memes and community coordination; nothing here is financial advice; always DYOR and verify contracts.</p>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <div>© 2025 $EARLY • Not wrong, just early.</div>
+    </footer>
+  </div>
+</body>
+</html>
